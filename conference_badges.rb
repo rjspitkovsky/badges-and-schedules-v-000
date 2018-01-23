@@ -17,5 +17,9 @@ def assign_rooms(attendees)
     rooms << "Hello, #{name}! You'll be assigned to room #{count}!"
     count += 1
   end
-  rooms 
+  rooms
 end
+
+def printer(attendees)
+
+end 
