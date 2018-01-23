@@ -19,10 +19,17 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-x = 0
-while x < attendees.length
-  puts batch_badge_creator(attendees)[x]
-  puts assign_rooms(attendees)[x]
-  x += 1
-end 
+  attendees.each do |index|
+    puts batch_badge_creator(attendees)[index]
+    puts assign_rooms(attendees)[index]
+  end 
+
+
+
+# x = 0
+# while x < attendees.length
+#   puts batch_badge_creator(attendees)[x]
+#   puts assign_rooms(attendees)[x]
+#   x += 1
+# end 
 end
